@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+
+	"name": "medium-zen-mode",
+	"version": "1.0",
+
+	"description": "Zen-mode for Medium",
+
+	"permissions": [
+		"activeTab",
+		"tabs"
+	],
+	"browser_action": {
+
+	},
+
+	"background": {
+    "scripts": ["zen.js"]
+	},
+
+	"content_scripts": [
+    {
+      "matches": ["https://medium.com/"],
+      "css": ["zen.css"]
+    }
+  ]
+}

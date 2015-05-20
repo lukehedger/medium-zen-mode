@@ -1,0 +1,12 @@
+.metabar, .supplementalPostContent, .paragraphControls, .highlightMenu {
+  display: none !important;
+}
+
+.postField--body {
+  padding-top: 0 !important;
+}
+
+::selection {
+  color: white !important;
+  background-color: black !important;
+}
